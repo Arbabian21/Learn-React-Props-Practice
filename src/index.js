@@ -1,8 +1,13 @@
-import React from "react";
+import React, { StrictMode } from "react";
 import ReactDOM from "react-dom";
 import App from "./components/App";
 
-ReactDOM.render(<App />, document.getElementById("root"));
+ReactDOM.render(
+	<StrictMode>
+		<App />
+	</StrictMode>,
+	document.getElementById("root")
+);
 
 //1. Apply CSS styles to App.jsx component
 //to match the appearance on the completed app:
