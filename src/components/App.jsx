@@ -1,10 +1,19 @@
 import React from "react";
 import Card from "./Card";
+import contacts from "../contacts";
 
 function App() {
 	return (
 		<div>
-			<Card></Card>
+			<h1 className="heading">My Contacts</h1>
+			{contacts.map((entry) => (
+				<Card
+					name={entry.name}
+					phone={entry.phone}
+					img={entry.imgURL}
+					email={entry.email}
+				></Card>
+			))}
 		</div>
 	);
 }
