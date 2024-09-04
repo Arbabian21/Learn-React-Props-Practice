@@ -14,6 +14,7 @@ function App() {
 			/>
 			{contacts.map((entry) => (
 				<Card
+					key={entry.id}
 					name={entry.name}
 					phone={entry.phone}
 					img={entry.imgURL}
